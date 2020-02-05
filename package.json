@@ -1,0 +1,14 @@
+{
+  "name": "react-native-flip-editor",
+  "version": "0.1.0",
+  "description": "Flip Editor for React Native",
+  "main": "index.js",
+  "author": "Andy Hubert",
+  "license": "MIT",
+  "dependencies": {
+    "react-native-webview": "^8.0.6"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.58.0"
+  }
+}
