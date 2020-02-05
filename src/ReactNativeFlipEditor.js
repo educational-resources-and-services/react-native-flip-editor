@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
 
 const ReactNativeFlipEditor = ({
   updateContent,
+  style,
   ...otherProps
  }) => {
 
@@ -97,6 +98,7 @@ const ReactNativeFlipEditor = ({
     <WebView
       style={[
         styles.webView,
+        style,
       ]}
       showsVerticalScrollIndicator={false}
       showsHorizontalScrollIndicator={false}
