@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useRef } from 'react'
 import { StyleSheet, Text, View, Platform } from 'react-native'
 import WebView from './components/WebView'
 
@@ -47,7 +47,7 @@ const ReactNativeFlipEditor = ({
     postIfReady()
   }
 
-  const source = {
+  const source = useRef({
     html: `
       <!DOCTYPE html>
       <html>
@@ -91,7 +91,7 @@ const ReactNativeFlipEditor = ({
         </body>
       </html>
     `
-  }
+  }).current
 
   return (
     <WebView
