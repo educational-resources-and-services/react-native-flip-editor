@@ -6,7 +6,7 @@
   "author": "Andy Hubert",
   "license": "MIT",
   "dependencies": {
-    "react-native-webview": "^8.0.6"
+    "react-native-webview": "7.4.3"
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "^0.58.0"
