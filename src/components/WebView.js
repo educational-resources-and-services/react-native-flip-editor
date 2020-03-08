@@ -11,7 +11,7 @@ const WebView = ({
 
   const onNavigationStateChange = useCallback(
     ({ url }) => {
-      if(url) {
+      if(/^https?:\/\//.test(url)) {
         webviewRef.current.stopLoading()
         Linking.openURL(url)
       }
